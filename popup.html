@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      button {
+        border: none;
+        background-color: inherit;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+        padding: -10px 0px;
+      }
+      button:hover {background: #eee;}
+      table {
+        border: 1px solid black;
+      }
+      td {
+        border: 1px solid #000;
+        width: 400px;
+        overflow:auto;
+        }
+        td+td {
+          width: auto;
+        }
+        td[content-editable] {
+          overflow: scroll;
+        } 
+        
+    </style>
+  </head>
+  <body>
+    <h1 style="color:red">CopySpaghetti</h1>
+    <p style="color:red">Click copy next to a copypasta to copy it to clipboard. Click on the text to edit. Happy copying!</p>
+    <table style="width:400px"  id="pastas">
+    </table>
+    <script src="popup.js"></script>
+  </body>
+</html>
